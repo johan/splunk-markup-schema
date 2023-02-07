@@ -152,10 +152,12 @@
   <define name="InlinePanel">
     <element name="panel">
       <interleave>
+        <optional>
+          <attribute name="id">
+            <ref name="Identifier"/>
+          </attribute>
+        </optional>
         <!-- Optional panel-level title (in addition to the element-level title) -->
-        <attribute name="id">
-          <ref name="Identifier"/>
-        </attribute>
         <optional>
           <element name="title">
             <text/>
