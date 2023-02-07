@@ -4418,12 +4418,16 @@
     </choice>
   </define>
   <define name="BaseInputAttributes">
-    <attribute name="token">
-      <ref name="TokenName"/>
-    </attribute>
-    <attribute name="id">
-      <ref name="Identifier"/>
-    </attribute>
+    <optional>
+      <attribute name="token">
+        <ref name="TokenName"/>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="id">
+        <ref name="Identifier"/>
+      </attribute>
+    </optional>
     <optional>
       <!-- Specifies to run the search when the selection changes. Defaults to false -->
       <attribute name="searchWhenChanged">
