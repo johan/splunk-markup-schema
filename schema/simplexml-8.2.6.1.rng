@@ -2234,53 +2234,65 @@
             "percentile" interprets the value as a percentage of the distribution of data.
             The default value is "number".
           -->
-          <attribute name="minType">
-            <choice>
-              <value>number</value>
-              <value>percent</value>
-              <value>percentile</value>
-            </choice>
-          </attribute>
-          <attribute name="midType">
-            <choice>
-              <value>number</value>
-              <value>percent</value>
-              <value>percentile</value>
-            </choice>
-          </attribute>
-          <attribute name="maxType">
-            <choice>
-              <value>number</value>
-              <value>percent</value>
-              <value>percentile</value>
-            </choice>
-          </attribute>
-          <!--
-            minValue/midValue/maxValue: Optional. The value of the minimum/midpoint/maximum of the range.
-            When the corresponding type is "number", this can be any valid floating point number.
-            When the corresponding type is "percent" or "percentile", this should be a number between 0 and 100.
-            The default value is NaN, which indicates to use the lowest value from the data.
-          -->
-          <attribute name="minValue">
-            <choice>
-              <data type="integer"/>
-              <data type="float"/>
-            </choice>
-          </attribute>
-          <!-- The default value is NaN, which indicates to use a value halfway between the start and end of the range. -->
-          <attribute name="midValue">
-            <choice>
-              <data type="integer"/>
-              <data type="float"/>
-            </choice>
-          </attribute>
-          <!-- The default value is NaN, which indicates to use the highest value from the data. -->
-          <attribute name="maxValue">
-            <choice>
-              <data type="integer"/>
-              <data type="float"/>
-            </choice>
-          </attribute>
+          <optional>
+            <attribute name="minType">
+              <choice>
+                <value>number</value>
+                <value>percent</value>
+                <value>percentile</value>
+              </choice>
+            </attribute>
+          </optional>
+          <optional>
+            <attribute name="midType">
+              <choice>
+                <value>number</value>
+                <value>percent</value>
+                <value>percentile</value>
+              </choice>
+            </attribute>
+          </optional>
+          <optional>
+            <attribute name="maxType">
+              <choice>
+                <value>number</value>
+                <value>percent</value>
+                <value>percentile</value>
+              </choice>
+            </attribute>
+          </optional>
+          <optional>
+            <!--
+              minValue/midValue/maxValue: Optional. The value of the minimum/midpoint/maximum of the range.
+              When the corresponding type is "number", this can be any valid floating point number.
+              When the corresponding type is "percent" or "percentile", this should be a number between 0 and 100.
+              The default value is NaN, which indicates to use the lowest value from the data.
+            -->
+            <attribute name="minValue">
+              <choice>
+                <data type="integer"/>
+                <data type="float"/>
+              </choice>
+            </attribute>
+          </optional>
+          <optional>
+            <!-- The default value is NaN, which indicates to use a value halfway between the start and end of the range. -->
+            <attribute name="midValue">
+              <choice>
+                <data type="integer"/>
+                <data type="float"/>
+              </choice>
+            </attribute>
+          </optional>
+          <optional>
+            <!-- The default value is NaN, which indicates to use the highest value from the data. -->
+            <attribute name="maxValue">
+              <choice>
+                <data type="integer"/>
+                <data type="float"/>
+              </choice>
+            </attribute>
+          </optional>
         </interleave>
       </element>
     </choice>
