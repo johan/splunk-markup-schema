@@ -2129,10 +2129,12 @@
           <attribute name="type">
             <value>sparkline</value>
           </attribute>
-          <choice>
-            <attribute name="field"/>
-            <attribute name="fields"/>
-          </choice>
+          <optional>
+            <choice>
+              <attribute name="field"/>
+              <attribute name="fields"/>
+            </choice>
+          </optional>
           <zeroOrMore>
             <ref name="SparklineFormatOptions"/>
           </zeroOrMore>
@@ -2143,10 +2145,12 @@
           <attribute name="type">
             <value>color</value>
           </attribute>
-          <choice>
-            <attribute name="field"/>
-            <attribute name="fields"/>
-          </choice>
+          <optional>
+            <choice>
+              <attribute name="field"/>
+              <attribute name="fields"/>
+            </choice>
+          </optional>
           <ref name="ColorPaletteOptions"/>
           <optional>
             <ref name="ColorScaleOptions"/>
@@ -2161,10 +2165,12 @@
           <attribute name="type">
             <value>number</value>
           </attribute>
-          <choice>
-            <attribute name="field"/>
-            <attribute name="fields"/>
-          </choice>
+          <optional>
+            <choice>
+              <attribute name="field"/>
+              <attribute name="fields"/>
+            </choice>
+          </optional>
           <zeroOrMore>
             <ref name="NumberFormatOptions"/>
           </zeroOrMore>
