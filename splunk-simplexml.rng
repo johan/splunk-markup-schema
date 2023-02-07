@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
   <start>
-    <a:documentation>
-Simple XML RelaxNG Schema
-</a:documentation>
+    <a:documentation>Simple XML RelaxNG Schema</a:documentation>
     <choice>
       <ref name="Dashboard"/>
       <ref name="Form"/>
     </choice>
   </start>
   <define name="Dashboard">
-    <a:documentation>
-Dashboard
-</a:documentation>
+    <a:documentation>Dashboard</a:documentation>
     <element name="dashboard">
       <interleave>
         <ref name="BaseViewAttributes"/>
@@ -147,9 +143,7 @@ Dashboard
     </element>
   </define>
   <define name="Panel">
-    <a:documentation>
-Dashboard Panel
-</a:documentation>
+    <a:documentation>Dashboard Panel</a:documentation>
     <choice>
       <ref name="InlinePanel"/>
       <ref name="PanelRef"/>
@@ -200,9 +194,7 @@ Dashboard Panel
     </element>
   </define>
   <define name="Element">
-    <a:documentation>
-Dashboard Elements
-</a:documentation>
+    <a:documentation>Dashboard Elements</a:documentation>
     <choice>
       <ref name="Chart"/>
       <ref name="Table"/>
@@ -228,9 +220,7 @@ Dashboard Elements
     </element>
   </define>
   <define name="ElementSearch">
-    <a:documentation>
-Searches. Deprecated. Use SearchNode instead.
-</a:documentation>
+    <a:documentation>Searches. Deprecated. Use SearchNode instead.</a:documentation>
     <choice>
       <ref name="InlineSearch"/>
       <ref name="InlineSearchTemplate"/>
@@ -440,9 +430,7 @@ Searches. Deprecated. Use SearchNode instead.
     </choice>
   </define>
   <define name="SearchCondition">
-    <a:documentation>
-Search Event Handlers
-</a:documentation>
+    <a:documentation>Search Event Handlers</a:documentation>
     <element name="condition">
       <interleave>
         <optional>
@@ -611,9 +599,7 @@ Search Event Handlers
     </choice>
   </define>
   <define name="Drilldown">
-    <a:documentation>
-Drilldown
-</a:documentation>
+    <a:documentation>Drilldown</a:documentation>
     <element name="drilldown">
       <optional>
         <attribute name="target"/>
@@ -735,9 +721,7 @@ Drilldown
     </element>
   </define>
   <define name="InitEventHandler">
-    <a:documentation>
-Dashboard Init Event Handler
-</a:documentation>
+    <a:documentation>Dashboard Init Event Handler</a:documentation>
     <element name="init">
       <optional>
         <choice>
@@ -757,9 +741,7 @@ Dashboard Init Event Handler
     </element>
   </define>
   <define name="TrellisOption">
-    <a:documentation>
-Trellis Options
-</a:documentation>
+    <a:documentation>Trellis Options</a:documentation>
     <choice>
       <!-- Enable or disable the trellis feature.  Defaults to false. -->
       <element name="option">
@@ -796,9 +778,7 @@ Trellis Options
     </choice>
   </define>
   <define name="Chart">
-    <a:documentation>
-Chart Element
-</a:documentation>
+    <a:documentation>Chart Element</a:documentation>
     <element name="chart">
       <interleave>
         <ref name="BaseElementAttributes"/>
@@ -2020,9 +2000,7 @@ Chart Element
     </choice>
   </define>
   <define name="Table">
-    <a:documentation>
-Table Element
-</a:documentation>
+    <a:documentation>Table Element</a:documentation>
     <element name="table">
       <interleave>
         <ref name="BaseElementAttributes"/>
@@ -3298,9 +3276,7 @@ Table Element
     </choice>
   </define>
   <define name="Single">
-    <a:documentation>
-Single Value Element
-</a:documentation>
+    <a:documentation>Single Value Element</a:documentation>
     <element name="single">
       <interleave>
         <ref name="BaseElementAttributes"/>
@@ -3587,9 +3563,7 @@ Single Value Element
     </choice>
   </define>
   <define name="Map">
-    <a:documentation>
-Map Element
-</a:documentation>
+    <a:documentation>Map Element</a:documentation>
     <element name="map">
       <interleave>
         <ref name="BaseElementAttributes"/>
@@ -3906,9 +3880,7 @@ Map Element
     </choice>
   </define>
   <define name="Viz">
-    <a:documentation>
-Viz Element
-</a:documentation>
+    <a:documentation>Viz Element</a:documentation>
     <element name="viz">
       <interleave>
         <ref name="BaseElementAttributes"/>
@@ -3984,9 +3956,7 @@ Viz Element
     </choice>
   </define>
   <define name="Event">
-    <a:documentation>
-Event Element
-</a:documentation>
+    <a:documentation>Event Element</a:documentation>
     <element name="event">
       <interleave>
         <ref name="BaseElementAttributes"/>
@@ -4187,9 +4157,7 @@ Event Element
     </choice>
   </define>
   <define name="Html">
-    <a:documentation>
-HTML Element
-</a:documentation>
+    <a:documentation>HTML Element</a:documentation>
     <element name="html">
       <interleave>
         <ref name="BaseElementAttributes"/>
@@ -4219,9 +4187,7 @@ HTML Element
     </element>
   </define>
   <define name="ElementFieldList">
-    <a:documentation>
-Common Element Configuration
-</a:documentation>
+    <a:documentation>Common Element Configuration</a:documentation>
     <!--
       A list of fields to display in the given visualization. This list is a JSON encoded array, or as a fallback a
       comma separated list of optionally quoted field names.
@@ -4362,9 +4328,7 @@ Common Element Configuration
     </element>
   </define>
   <define name="Form">
-    <a:documentation>
-Forms
-</a:documentation>
+    <a:documentation>Forms</a:documentation>
     <element name="form">
       <interleave>
         <ref name="BaseViewAttributes"/>
@@ -4435,9 +4399,7 @@ Forms
     </element>
   </define>
   <define name="Input">
-    <a:documentation>
-Input types
-</a:documentation>
+    <a:documentation>Input types</a:documentation>
     <choice>
       <ref name="TextInput"/>
       <ref name="DropdownInput"/>
@@ -4831,9 +4793,7 @@ Input types
     </element>
   </define>
   <define name="Anything">
-    <a:documentation>
-Common data type definitions
-</a:documentation>
+    <a:documentation>Common data type definitions</a:documentation>
     <zeroOrMore>
       <choice>
         <element>
