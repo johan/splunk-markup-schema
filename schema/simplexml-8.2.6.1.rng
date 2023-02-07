@@ -4737,6 +4737,9 @@
         </attribute>
         <ref name="BaseInputAttributes"/>
         <optional>
+          <ref name="InputChoice"/>
+        </optional>
+        <optional>
           <ref name="InputSearch"/>
         </optional>
         <optional>
