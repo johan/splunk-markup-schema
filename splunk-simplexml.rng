@@ -37,6 +37,11 @@
   <define name="BaseViewAttributes">
     <interleave>
       <optional>
+        <attribute name="theme">
+          <value>dark</value>
+        </attribute>
+      </optional>
+      <optional>
         <attribute name="refresh">
           <data type="integer"/>
         </attribute>
