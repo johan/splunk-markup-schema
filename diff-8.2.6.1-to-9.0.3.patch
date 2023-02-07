@@ -1,0 +1,26 @@
+--- schema-8.2.6.1/simplexml.rng	2023-02-06 20:53:39
++++ schema-9.0.3/simplexml.rng	2022-11-10 14:07:04
+@@ -33,6 +33,11 @@
+             <text/>
+           </element>
+         </optional>
++        <optional>
++          <element name="tags">
++            <text/>
++          </element>
++        </optional>
+         <optional>
+           <ref name="InitEventHandler"/>
+         </optional>
+@@ -4378,6 +4383,11 @@
+             <text/>
+           </element>
+         </optional>
++        <optional>
++          <element name="tags">
++            <text/>
++          </element>
++        </optional>
+         <optional>
+           <choice>
+             <!-- Deprecated. Use SearchNode instead. -->

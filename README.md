@@ -41,3 +41,10 @@ load it up in something like [VSCode](https://code.visualstudio.com/) with
 [RedHat's XML extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml),
 and it'll draw squgglies around the real culprits,
 offer tooltips stating what's wrong, and so on.
+
+Yes, this isn't based on the very latest splunk, but the xml format doesn't seem to change much.
+To bring it up to 9.0.3 specs, run this:
+
+```sh
+patch -p1 < diff-8.2.6.1-to-9.0.3.patch schema/simplexml-8.2.6.1.rng
+```
