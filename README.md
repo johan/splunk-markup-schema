@@ -47,4 +47,8 @@ To bring it up to 9.0.3 specs, run this:
 
 ```sh
 patch -p1 < diff-8.2.6.1-to-9.0.3.patch schema/simplexml-8.2.6.1.rng
+git mv schema/simplexml-{8.2.6.1,9.0.3}.rng
+git commit -a -m 'chore: bump to 9.0.3 specs'
 ```
+
+…and update any paths you might have referencing the old version.
