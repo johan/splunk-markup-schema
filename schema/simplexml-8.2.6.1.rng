@@ -2354,11 +2354,17 @@
             <value>minMidMax</value>
           </attribute>
           <!-- Optional. The color to start the gradient. The default value is #00CC00. -->
-          <attribute name="minColor"/>
+          <optional>
+            <attribute name="minColor"/>
+          </optional>
           <!-- Optional. An optional color at the middle of the gradient. The default value is none. -->
-          <attribute name="midColor"/>
+          <optional>
+            <attribute name="midColor"/>
+          </optional>
           <!-- Optional. The color to end the gradient. The default value is #CC0000. -->
-          <attribute name="maxColor"/>
+          <optional>
+            <attribute name="maxColor"/>
+          </optional>
         </interleave>
       </element>
     </choice>
